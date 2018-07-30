@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="ContactUsMesssages_Messages::messages.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="messages_data_form"/>
+			<!--<block class="Magento\Framework\View\Element\Template" name="send" template="ContactUsMesssages_Messages::send.phtml" />-->
+			<block class="ContactUsMesssages\Messages\Block\Adminhtml\Data\Edit\Buttons\SendData" template="ContactUsMesssages_Messages::send.phtml" />
+        </referenceContainer>
+    </body>
+</page>

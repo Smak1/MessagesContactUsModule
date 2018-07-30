@@ -1,0 +1,7 @@
+{
+  "name": "Contact_us/Messages",
+  "autoload": {
+    "psr-4": { "ContactUsMesssages\\Message\\": "" },
+    "files": [ "registration.php" ]
+  }
+}

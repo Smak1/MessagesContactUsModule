@@ -1,0 +1,33 @@
+<div class="message_form">
+	<div data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'>
+		<div data-role="collapsible">
+			<div class="fl_right" data-role="trigger">
+				<button id="open" type="button" class="action-scalable open primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"  ><span class="ui-button-text"><span> Reply to the message</span></span></button>
+			</div>
+		</div>
+		<div data-role="content">
+			<form id="send-email" method="post" action="<?php echo $block->getUrl('messages/data/send'); ?>">
+				<input type="hidden" id="email" name="email" value="<?php echo $block->HiddenMail(); ?>">
+				<div class="admin__field">
+					<label class="admin__field-label">
+						<span>Subject</span>
+					</label>
+					<div class="admin__field-control">
+						<input class="admin__control-text" type="text" name="subject" required maxlength="255">
+					</div>
+				</div>
+				<div class="admin__field">
+					<label class="admin__field-label">
+						<span>Content</span>
+					</label>
+					<div class="admin__field-control">		
+						<textarea class="admin__control-text" rows="4" name="message" required maxlength="255"></textarea>
+					</div>
+				</div>	
+				<div class="admin__field">
+					<button id="save" type="submit" class="action- scalable save primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"  ><span class="ui-button-text"><span>Semd  mail</span></span></button>	
+				</div>	
+			</form>
+		</div>
+    </div>
+</div> 
